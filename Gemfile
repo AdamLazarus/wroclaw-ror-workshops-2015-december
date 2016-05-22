@@ -41,6 +41,9 @@ end
 group :production do
   gem 'puma'
   gem 'rails_12factor'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'rspec-rails'
 end
 
 group :test do
