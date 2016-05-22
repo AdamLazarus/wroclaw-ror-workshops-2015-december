@@ -4,5 +4,10 @@ class StudentDecorator < BaseDecorator
   end
 
   def avg_notes(subject_item)
+    average = subject_item_notes.where(subject_item: subject_item).average('value')
+    average ||= 0.00
+    average.round(2)
+
+    '%.2f' % average
   end
 end
