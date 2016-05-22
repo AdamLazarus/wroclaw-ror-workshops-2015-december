@@ -27,6 +27,7 @@ group :development do
   gem 'rails_layout'
   gem 'spring-commands-rspec'
   gem 'quiet_assets'
+  gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
@@ -35,7 +36,6 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'spring'
-  gem 'web-console', '~> 2.0'
 end
 
 group :production do
