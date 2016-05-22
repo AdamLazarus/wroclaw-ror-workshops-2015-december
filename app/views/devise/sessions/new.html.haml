@@ -1,7 +1,7 @@
 .row
   .col-xs-4.col-xs-offset-4
     %h2 Log in
-    = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    = simple_form_for(resource, url: user_session_path()) do |f|
       = f.error_notification
       .form-inputs
         = f.input :email, autofocus: true
@@ -10,4 +10,3 @@
         %b Remember me
       .form-actions
         = f.button :submit, "Log in"
-    = render "devise/shared/links"
